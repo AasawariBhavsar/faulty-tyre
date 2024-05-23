@@ -5,7 +5,7 @@ import os
 app = Flask(__name__)
 
 # Load the pre-trained model
-model = load_trained_model('../models/mobilenet.h5')
+model = load_trained_model('models/mobilenet.h5')
 
 @app.route("/", methods=["GET", "POST"])
 def index():
